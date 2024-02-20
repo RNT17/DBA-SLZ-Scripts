@@ -2,7 +2,7 @@
                 
                 Bem vindos ao DBA-SLZ
                 
-                Vari·veis
+                Vari√°veis
 
                 Programando em T-SQL
 
@@ -12,9 +12,9 @@
 
 
 --Sintaxe:
---declaraÁ„o
+--declara√ß√£o
 DECLARE @variavel data-type
---AtribuiÁ„o
+--Atribui√ß√£o
 SET @variavel='valor'
 --Retornar valor
 SELECT @variavel
@@ -26,8 +26,8 @@ SET @CanalYoutube = 'DBA-SLZ'
 SELECT @CanalYoutube 
 
 --Dica: 
---Quando uma vari·vel È primeiramente declarada, seu valor È definido como NULL.
---Para atribuir um valor ‡ uma vari·vel, use a instruÁ„o SET.
+--Quando uma vari√°vel √© primeiramente declarada, seu valor √© definido como NULL.
+--Para atribuir um valor √† uma vari√°vel, use a instru√ß√£o SET.
 
 --Exemplo 2
 drop table if exists #data 
@@ -38,11 +38,12 @@ insert into #data values ('2020-01-01'), ('2021-01-01'), ('2022-01-01'), ('2023-
 
 select * from #data
 
---fazer na hora de gravar 
---DECLARE @data date = '2024-01-01'
---select * from #data where dt = @data
+-- Consultando usando vari√°vel
+DECLARE @data date = '2024-01-01'
+select * from #data where dt = @data
 
---fazer na hora de gravar 
--- Outra forma de atribuiÁ„o
---select @data = dt from #data
---select @data
+-- Outra forma de atribui√ß√£o. Aqui √© consultado o valor dt da tabela #data e ao mesmo tempo 
+-- atribuido esse valor na var√°vel @data. Por fim, selecionamos o valor no select final.
+select top 1 @data = dt from #data
+select @data
+
