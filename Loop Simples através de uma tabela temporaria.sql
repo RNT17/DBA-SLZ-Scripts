@@ -2,7 +2,7 @@
                 
                 Bem vindos ao DBA-SLZ
                 
-                2 - Loop Simples através de uma tabela temporaria
+                2 - Loop Simples atravÃ©s de uma tabela temporaria
 
                 Programando em T-SQL
 
