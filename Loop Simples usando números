@@ -1,0 +1,22 @@
+/*
+                
+                Bem vindos ao DBA-SLZ
+                
+                1 - Loop Simples usando números
+
+                Programando em T-SQL
+
+                ^_^
+
+*/
+
+
+
+
+declare @count int = 0
+
+WHILE @count <= 10
+begin
+	PRINT @count;
+	SET @count = @count + 1
+end
